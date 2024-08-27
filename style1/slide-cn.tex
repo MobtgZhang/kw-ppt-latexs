@@ -1,0 +1,198 @@
+% !TeX program = lualatex
+\documentclass{kw-cn}
+
+\title{知识工场PPT模板测试样例一}
+\author{作者 1\inst{1}, 作者 2\inst{1}, and 作者 3\inst{2}}
+\institute[]{%
+	\inst{1} 复旦大学知识工场实验室\\
+	\inst{2} 复旦大学计算机科学与技术学院
+}
+\date{\today}
+\titlegraphic{\includegraphics[height=.25\textheight]{Fudan-logo.png}\includegraphics[height=.25\textheight]{logo.png}}
+% 参考文献
+%\bibliography{literature.bib}
+\begin{document}
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+\section{动机}
+\begin{frame}{动机}
+	\begin{itemize}
+		\item 这里增加相关的段落
+	\end{itemize}
+	
+	\seprule
+	
+	这里是用横线分开的内容，例如变量解释等。
+\end{frame}
+\begin{frame}
+	当然，如果你不需要标题的话，也是可以的，例如当前这样的一个页面
+	\begin{itemize}
+		\item 当前这个页面并不需要标题。
+	\end{itemize}
+\end{frame}
+
+\section{数学表达式}
+\begin{frame}{积分和其他的表达形式}
+	\begin{equation}
+		\iint_{\partial\Omega}f(x)\diff{x} \in \complexes
+	\end{equation}
+	\begin{align}
+		E &= mc^2\\
+		F &= ma
+	\end{align}
+
+	\seprule
+	
+	\begin{tabular}{rl}
+		$m$ & 质量的大小\\
+		$c$ & 光速的大小
+	\end{tabular}
+\end{frame}
+\begin{frame}{定理，公式等表示方式}
+	\begin{theorem}
+		下面的叙述是正确的。
+		\begin{equation}
+			\frac{\partial f(\vec{x})}{\partial x_i} = \sum_{l=1}^{L}\cos\left(l\frac{2\pi}{L} + 0\right)
+		\end{equation}
+	\end{theorem}
+\end{frame}
+
+\section{相关元素}
+
+\begin{frame}[fragile]{Typography}
+\begin{verbatim}当前的主题提供了默认值为
+\emph{文字强调}文本，\alert{文字提醒}部分
+或显示\textbf{文字加粗}结果。\end{verbatim}
+	
+\begin{center}变成下面的形式\end{center}
+	
+当前的主题提供了默认值为\emph{文字强调}，\alert{文字提醒}部分
+或显示\textbf{文字加粗}结果。
+
+\end{frame}
+
+
+
+\begin{frame}{字体特征测试}
+	\begin{itemize}
+		\item Regular
+		\item \textit{Italic}
+		\item \textsc{Small Caps}
+		\item \textbf{Bold}
+		\item \textbf{\textit{Bold Italic}}
+		\item \textbf{\textsc{Bold Small Caps}}
+		\item \texttt{Monospace}
+		\item \texttt{\textit{Monospace Italic}}
+		\item \texttt{\textbf{Monospace Bold}}
+		\item \texttt{\textbf{\textit{Monospace Bold Italic}}}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{列表表示}
+	\begin{columns}[T,onlytextwidth]
+		\column{0.33\textwidth}
+		Items
+		\begin{itemize}
+			\item 牛奶 \item 鸡蛋 \item 土豆
+		\end{itemize}
+		
+		\column{0.33\textwidth}
+		Enumerations
+		\begin{enumerate}
+			\item 第一，\item 第二 和 \item 最后。
+		\end{enumerate}
+		
+		\column{0.33\textwidth}
+		Descriptions
+		\begin{description}
+			\item[PowerPoint] Meeh. \item[Beamer] Yeeeha.
+		\end{description}
+	\end{columns}
+\end{frame}
+\begin{frame}{表格的画法}
+	\begin{table}
+		\caption{世界上最大的城市（来源：维基百科）}
+		\begin{tabular}{@{} lr @{}}
+			\toprule
+			City & Population\\
+			\midrule
+			Mexico City & 20,116,842\\
+			Shanghai & 19,210,000\\
+			Peking & 15,796,450\\
+			Istanbul & 14,160,467\\
+			\bottomrule
+		\end{tabular}
+	\end{table}
+\end{frame}
+\begin{frame}{模块}
+	预定义了三种不同的块环境，可以用不同的可选背景颜色。
+	
+	\begin{columns}[T,onlytextwidth]
+		\column{0.45\textwidth}
+		\begin{block}{默认的}
+			模块文本
+		\end{block}
+		
+		\begin{alertblock}{提醒}
+			模块文本
+		\end{alertblock}
+		
+		\begin{exampleblock}{例子}
+			模块文本
+		\end{exampleblock}
+		
+		\column{0.45\textwidth}
+		
+		\metroset{block=fill}
+		
+		\begin{block}{默认}
+			模块文本
+		\end{block}
+		
+		\begin{alertblock}{提醒}
+			模块文本
+		\end{alertblock}
+		
+		\begin{exampleblock}{例子}
+			模块文本
+		\end{exampleblock}
+		
+	\end{columns}
+\end{frame}
+\begin{frame}{图的画法}
+可以使用tikz和pdgplots作非常复杂的图像，例如下面的简单图像
+	\begin{figure}
+		\begin{tikzpicture}
+			\begin{axis}[
+				betterplot,
+				width=0.9\textwidth,
+				height=6cm,
+				]
+				
+				\addplot {sin(deg(x))};
+				\addplot+[samples=100] {sin(deg(2*x))};
+				
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[standout,plain]
+	\Huge 谢谢观看！
+\end{frame}
+
+
+\appendix
+\begin{frame}[fragile]{FAQs}
+
+有时，在演示文稿末尾添加幻灯片以供观众提问时参考是有用的。
+	
+最好的方法是在前言中包含\verb|appendixnumberbimer|包，并在备份幻灯片之前调用\verb|| \appendix|。
+	
+该主题将自动关闭附录中幻灯片的幻灯片编号和进度条。
+
+\end{frame}
+
+\end{document}
