@@ -24,6 +24,7 @@
 1. [样式一](https://www.overleaf.com/read/zdvbqghvjgfs#d1613a)
 2. [样式二](https://www.overleaf.com/read/pgsdgpxfxqww#f535d7)
 3. [样式三](https://www.overleaf.com/read/fydcmkpkpkzp#5a1138)
+
 注意中文样式只支持`XeTeX`引擎，`pdflatex`引擎编译会有问题。
 
 使用的同学需要将对应的LaTeX PPT模板导入到自己的Overleaf项目中即可。
