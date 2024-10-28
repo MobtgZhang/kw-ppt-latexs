@@ -1,16 +1,16 @@
-% !TeX program = lualatex
-\documentclass{kw-cn}
+\documentclass{kw}
 
-\title{知识工场PPT模板测试样例一}
+% 自定义标题页内容
+\title[副标题]{知识工场PPT模板测试\\样例二}
+\subtitle{副标题}
 \author{作者 1\inst{1}, 作者 2\inst{1}, and 作者 3\inst{2}}
 \institute[]{%
 	\inst{1} 复旦大学知识工场实验室\\
 	\inst{2} 复旦大学计算机科学与技术学院
 }
-\date{\today}
-\titlegraphic{\includegraphics[height=.25\textheight]{fdu-logo.png}\includegraphics[height=.25\textheight]{kw-logo.png}}
-% 参考文献
-%\bibliography{literature.bib}
+\date{\today} % 当前日期
+
+% 开始文档
 \begin{document}
 \begin{frame}[plain]
 	\titlepage
@@ -145,8 +145,6 @@
 		
 		\column{0.45\textwidth}
 		
-		\metroset{block=fill}
-		
 		\begin{block}{默认}
 			模块文本
 		\end{block}
@@ -179,8 +177,10 @@
 	\end{figure}
 \end{frame}
 
-\begin{frame}[standout,plain]
-	\Huge 谢谢观看！
+\begin{frame}{结束}
+	\begin{center}
+		\Huge 谢谢观看！
+	\end{center}
 \end{frame}
 
 
