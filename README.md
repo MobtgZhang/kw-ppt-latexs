@@ -6,17 +6,19 @@
 目前有以下的样式：
 <table>
   <tr>
-    <td><img src="asserts/style1-cn.jpg"></td>
-    <td><img src="asserts/style1-en"></td>
-    <td><img src="asserts/style2-cn"></td>
-    <td><img src="asserts/style2-en"></td>
+    <td><img src="asserts/style1-cn.png" width="300"></td>
+    <td><img src="asserts/style1-en.png" width="300"></td>
+  </tr>
+  <tr>
+    <td><img src="asserts/style2-cn.png" width="300"></td>
+    <td><img src="asserts/style2-en.png" width="300"></td>
   </tr>
 </table>
 
 非常欢迎同学提交requests！
 # Overleaf 使用方式
 1. [样式一](https://www.overleaf.com/read/zdvbqghvjgfs#d1613a)
-2. [样式二]()
+2. [样式二](https://www.overleaf.com/read/pgsdgpxfxqww#f535d7)
 
 注意中文样式只支持`XeTeX`引擎，`pdflatex`引擎编译会有问题。
 
