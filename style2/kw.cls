@@ -233,7 +233,11 @@
     \insertcontents
 }
 % 应用新的beamertemplate
-
+\setbeamertemplate{section in toc}[rectangle] % 目录部分的样式
+\setbeamertemplate{subsection in toc}[ball]   % 子目录部分的样式
+\setbeamercolor{item}{fg=blue} % 修改项目符号的颜色
+\setbeamercolor{section in toc}{fg=blue} % 修改目录中章节标题的颜色
+\setbeamercolor{subsection in toc}{fg=orange} % 修改子章节标题的颜色
 \setbeamertemplate{frametitle}[KWFrameTitle]
 \setbeamertemplate{frame}[KWFrame]
 % 定义页脚
