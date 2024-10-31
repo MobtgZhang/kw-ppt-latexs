@@ -225,6 +225,7 @@
     \par
     \centering%
     \includegraphics[width=0.9\paperwidth]{headline.png} % 插入headline图
+     \vspace{-5ex}
 }
 \defbeamertemplate{frame}{KWFrame}{
     \begin{frametitle}
