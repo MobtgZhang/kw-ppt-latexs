@@ -233,6 +233,8 @@
     \insertcontents
 }
 % 应用新的beamertemplate
+% 去掉右下角的导航页
+\setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{section in toc}[rectangle] % 目录部分的样式
 \setbeamertemplate{subsection in toc}[ball]   % 子目录部分的样式
 \setbeamercolor{item}{fg=blue} % 修改项目符号的颜色
